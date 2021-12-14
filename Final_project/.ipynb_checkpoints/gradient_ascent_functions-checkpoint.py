@@ -95,12 +95,3 @@ def gradient_ascent(theta, features, target, lr, num_steps):
         theta=update_theta(theta, target, preds, features, lr)
     
     return theta, log_likelihood_history
-
-  
-
-
-def vanilla_descent(theta,loss,gradient,lr,beta,n_iter,t, theta_p):
-  
-  grad=gradient(theta)
-  theta=theta-lr*grad
-  return(theta)
